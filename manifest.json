@@ -1,0 +1,34 @@
+{
+    "name": "Rocket Planner",
+    "version": "1.0",
+    "description": "MOST EPIC PLANNER",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon":{
+            "16":"images/icons16.png",
+            "32":"images/icons32.png",
+            "48":"images/icons48.png",
+            "128":"images/icons128.png"
+        }
+    },
+    "permissions":[
+        "storage",
+        "tabs",
+        "contextMenus"
+    ],
+    "background": {
+        "scripts":[
+            "packages/uuidv4.min.js",
+            "js/action-items-utils.js",
+            "js/background.js"
+        ],
+        "persistent":false
+    },
+    "icons":{
+        "16":"images/icons16.png",
+        "32":"images/icons32.png",
+        "48":"images/icons48.png",
+        "128":"images/icons128.png"
+    },
+    "manifest_version": 2
+}
